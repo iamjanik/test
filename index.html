@@ -35,7 +35,7 @@ a{text-decoration:none;color:inherit}
 .sh{text-align:center;margin-bottom:52px}
 .stag{font-family:'Barlow Condensed',sans-serif;font-size:.74rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#888;margin-bottom:8px}
 .stitle{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;color:#2c2c2c;text-transform:uppercase;letter-spacing:.03em;line-height:1}
-.stitle span{color:#aaa}
+.stitle span{color:#2c2c2c}
 .sdiv{width:50px;height:3px;background:#2c2c2c;margin:14px auto 0}
 .ph{height:230px;background:#2c2c2c;display:flex;align-items:center;padding:0 8%;position:relative;overflow:hidden}
 .ph::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 60px,rgba(255,255,255,.02) 60px,rgba(255,255,255,.02) 61px)}
@@ -50,7 +50,7 @@ a{text-decoration:none;color:inherit}
 .bl{background:#fff;color:#2c2c2c}.bl:hover{background:#f5f5f5}
 .bg2{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4)}.bg2:hover{border-color:#fff}
 /* HERO */
-.hero{height:calc(100vh - 68px);min-height:520px;position:relative;overflow:hidden}
+.hero{height:clamp(400px,65vh,680px);position:relative;overflow:hidden}
 .sl{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
 .sl.active{opacity:1;z-index:2}
 .slbg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.06);transition:transform 7s ease;filter:grayscale(25%)}
@@ -230,7 +230,7 @@ footer{background:#1a1a1a}
         <a href="#" onclick="go('leist');sTo('lss4');return false">Ausschreibung &amp; Bauleitung</a>
       </div>
     </li>
-    <li><a href="#" onclick="go('proj');return false">Projekte</a></li>
+    <li><a href="#" onclick="go('proj');return false">Referenzen</a></li>
     <li><a href="#" onclick="go('jobs');return false">Jobs</a></li>
     <li><a href="#" onclick="go('kontakt');return false" class="ncta">Kontakt</a></li>
   </ul>
@@ -243,7 +243,7 @@ footer{background:#1a1a1a}
   <a href="#" onclick="go('ueber');cm();return false">Über uns</a>
   <a href="#" onclick="go('asp');cm();return false">Ansprechpartner</a>
   <a href="#" onclick="go('leist');cm();return false">Leistungen</a>
-  <a href="#" onclick="go('proj');cm();return false">Projekte</a>
+  <a href="#" onclick="go('proj');cm();return false">Referenzen</a>
   <a href="#" onclick="go('jobs');cm();return false">Jobs</a>
   <a href="#" onclick="go('kontakt');cm();return false">Kontakt</a>
 </div>
@@ -484,7 +484,7 @@ footer{background:#1a1a1a}
   <div class="fm">
     <div class="fbrand"><div class="flogo">Müller<em></em>Ingenieure</div><p>Ihr zuverlässiger Partner für Straßen- und Tiefbau, Kanal- und Wasserversorgungsnetze in Hessen und Umgebung.</p></div>
     <div class="fc"><h4>Leistungen</h4><ul><li><a href="#" onclick="go('leist');return false">Straßenbau</a></li><li><a href="#" onclick="go('leist');return false">Kanalbau</a></li><li><a href="#" onclick="go('leist');return false">Wasserversorgung</a></li><li><a href="#" onclick="go('leist');return false">Ausschreibung</a></li></ul></div>
-    <div class="fc"><h4>Unternehmen</h4><ul><li><a href="#" onclick="go('ueber');return false">Über uns</a></li><li><a href="#" onclick="go('asp');return false">Ansprechpartner</a></li><li><a href="#" onclick="go('proj');return false">Projekte</a></li><li><a href="#" onclick="go('jobs');return false">Jobs</a></li></ul></div>
+    <div class="fc"><h4>Unternehmen</h4><ul><li><a href="#" onclick="go('ueber');return false">Über uns</a></li><li><a href="#" onclick="go('asp');return false">Ansprechpartner</a></li><li><a href="#" onclick="go('proj');return false">Referenzen</a></li><li><a href="#" onclick="go('jobs');return false">Jobs</a></li></ul></div>
     <div class="fc"><h4>Kontakt</h4><address>Musterstraße 12<br>35390 Gießen<br><br>0641 / 123 456 0<br>info@mueller-ingenieure.de</address></div>
   </div>
   <div class="fbot"><p>© 2025 Müller Ingenieure GmbH. Alle Rechte vorbehalten.</p><div><a href="#">Impressum</a><a href="#">Datenschutz</a></div></div>
