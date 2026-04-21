@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referenzen – Müller Ingenieure</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<main class="pt">
+  <div class="ph">
+    <div class="phi">
+      <div class="stag">Referenzen</div>
+      <h1>Projekte</h1>
+      <div class="bc"><a href="index.html">Startseite</a><span>›</span>Referenzen</div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="sh">
+      <div class="stag">Unsere Referenzen</div>
+      <div class="stitle">Abgeschlossene Projekte</div>
+      <div class="sdiv"></div>
+    </div>
+    <div class="fbar">
+      <button class="fb active" onclick="fil('alle',this)">Alle</button>
+      <button class="fb" onclick="fil('str',this)">Straßenbau</button>
+      <button class="fb" onclick="fil('kan',this)">Kanalbau</button>
+      <button class="fb" onclick="fil('was',this)">Wasserversorgung</button>
+      <button class="fb" onclick="fil('son',this)">Sonstige</button>
+    </div>
+    <div class="pg">
+      <div class="pc" data-cat="str"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')"></div><div class="pb"><div class="ptag">Straßenbau</div><div class="pm"><span>Musterstadt</span><span>2023</span></div><div class="pnm">Ortsdurchfahrt Musterstadt B3</div><div class="pdsc">Vollausbau inkl. Gehwegen, Beleuchtung und Entwässerung – ca. 1,8 Mio. €</div></div></div>
+      <div class="pc" data-cat="kan"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80')"></div><div class="pb"><div class="ptag">Kanalbau</div><div class="pm"><span>Gießen</span><span>2023</span></div><div class="pnm">Kanalneubau Gewerbegebiet Nord</div><div class="pdsc">Planung DN 300–800, Regenrückhaltebecken nach DWA-A 117</div></div></div>
+      <div class="pc" data-cat="was"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1581093458791-9d42f5e3a469?w=600&q=80')"></div><div class="pb"><div class="ptag">Wasserversorgung</div><div class="pm"><span>Beispieldorf</span><span>2022</span></div><div class="pnm">Trinkwassernetz Gemeinde Beispieldorf</div><div class="pdsc">Erneuerung Hauptleitung DN 150, DVGW-Zertifizierung, Bauleitung</div></div></div>
+      <div class="pc" data-cat="str"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80')"></div><div class="pb"><div class="ptag">Straßenbau</div><div class="pm"><span>Lahn-Dill-Kreis</span><span>2022</span></div><div class="pnm">Kreisstraße K42 Deckenerneuerung</div><div class="pdsc">Ausschreibung und Bauleitung für 3,2 km Deckenerneuerung inkl. Markierung</div></div></div>
+      <div class="pc" data-cat="kan"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=600&q=80')"></div><div class="pb"><div class="ptag">Kanalbau</div><div class="pm"><span>Marburg</span><span>2022</span></div><div class="pnm">Regenwasserkanal Neubaugebiet West</div><div class="pdsc">Planung Rückhaltebecken, Versickerungsanlagen und Anschluss an Vorfluter</div></div></div>
+      <div class="pc" data-cat="son"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80')"></div><div class="pb"><div class="ptag">Sonstige</div><div class="pm"><span>Wetzlar</span><span>2021</span></div><div class="pnm">Parkplatzanlage Stadtzentrum</div><div class="pdsc">Neugestaltung mit versickerungsfähigem Belag, Begrünung und Beleuchtung</div></div></div>
+      <div class="pc" data-cat="str"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&q=80')"></div><div class="pb"><div class="ptag">Straßenbau</div><div class="pm"><span>Friedberg</span><span>2021</span></div><div class="pnm">Radweg Erschließung Ortsteil Süd</div><div class="pdsc">Neubau 1,4 km Radweg inkl. Querungshilfen, Beschilderung und Markierung</div></div></div>
+      <div class="pc" data-cat="was"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?w=600&q=80')"></div><div class="pb"><div class="ptag">Wasserversorgung</div><div class="pm"><span>Musterhöhe</span><span>2020</span></div><div class="pnm">Hochbehälter Sanierung Musterhöhe</div><div class="pdsc">Instandsetzung, neue DVGW-Messtechnik und Fernwirktechnik</div></div></div>
+      <div class="pc" data-cat="kan"><div class="pi" style="background-image:url('https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=600&q=80')"></div><div class="pb"><div class="ptag">Kanalbau</div><div class="pm"><span>Bad Nauheim</span><span>2020</span></div><div class="pnm">Mischwasserkanal Altstadt Sanierung</div><div class="pdsc">Relining und Erneuerung von 850 m Mischwasserkanal DN 400–600</div></div></div>
+    </div>
+  </div>
+</main>
+<div id="footer-placeholder"></div>
+<script>
+function fil(cat,btn){
+  document.querySelectorAll('.fb').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  document.querySelectorAll('.pc').forEach(function(c){
+    c.classList.toggle('hidden',cat!=='alle'&&c.dataset.cat!==cat);
+  });
+}
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

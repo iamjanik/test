@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Müller Ingenieure – Straßen- und Tiefbau</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main class="pt">
+
+  <!-- HERO SLIDER -->
+  <div class="hero">
+    <div class="sl active">
+      <div class="slbg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80')"></div>
+      <div class="slov"></div>
+      <div class="slc">
+        <div class="se">Straßen- und Tiefbau</div>
+        <div class="st">Infrastruktur,<br>die bleibt.</div>
+        <div class="ss">Planung, Ausschreibung und Bauleitung für kommunale und private Auftraggeber in Hessen.</div>
+        <div class="sb">
+          <a href="projekte.html" class="btn bd">Referenzen</a>
+          <a href="kontakt.html" class="btn bg2">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </div>
+    <div class="sl">
+      <div class="slbg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80')"></div>
+      <div class="slov"></div>
+      <div class="slc">
+        <div class="se">Kanalbau &amp; Entwässerung</div>
+        <div class="st">Hydraulik.<br>Normgerecht.</div>
+        <div class="ss">Kanalnetze, Rückhaltebecken und Versickerungsanlagen nach DWA-Regelwerk und KOSTRA-DWD.</div>
+        <div class="sb">
+          <a href="leistungen.html#kanal" class="btn bd">Leistungen</a>
+          <a href="kontakt.html" class="btn bg2">Anfrage stellen</a>
+        </div>
+      </div>
+    </div>
+    <div class="sl">
+      <div class="slbg" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1800&q=80')"></div>
+      <div class="slov"></div>
+      <div class="slc">
+        <div class="se">Wasserversorgung</div>
+        <div class="st">DVGW-konforme<br>Planung.</div>
+        <div class="ss">Von der Netzberechnung bis zur Druckprobe – alles aus einer Hand, termingerecht und dokumentiert.</div>
+        <div class="sb">
+          <a href="leistungen.html#wasser" class="btn bd">Mehr erfahren</a>
+          <a href="kontakt.html" class="btn bg2">Kontakt</a>
+        </div>
+      </div>
+    </div>
+    <div class="snav">
+      <div class="dot active" onclick="gS(0)"></div>
+      <div class="dot" onclick="gS(1)"></div>
+      <div class="dot" onclick="gS(2)"></div>
+      <span class="sctr" id="sctr">01 / 03</span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="ig">
+    <div class="it">
+      <div class="stag">Seit 2003</div>
+      <div class="stitle">Verlässlicher Partner<br>für Kommunen und<br>private Auftraggeber.</div>
+      <div class="sdiv"></div>
+      <p>Das Ingenieurbüro Müller wurde in Gießen gegründet und begleitet seitdem Infrastrukturprojekte jeder Größenordnung – von der ersten Bestandsaufnahme bis zur abgeschlossenen Bauleitung.</p>
+      <p style="margin-top:14px">Wir arbeiten mit AutoCAD Civil 3D und orientieren uns strikt an den geltenden Normen: DVGW, DWA, HOAI und VOB.</p>
+      <a href="ueber-uns.html" class="btn bo" style="margin-top:30px">Über das Büro</a>
+    </div>
+    <div class="nums">
+      <div class="nb"><strong>20+</strong><span>Jahre Erfahrung</span></div>
+      <div class="nb"><strong>150+</strong><span>Projekte</span></div>
+      <div class="nb"><strong>12</strong><span>Mitarbeiter</span></div>
+      <div class="nb"><strong>100 %</strong><span>Termingerecht</span></div>
+    </div>
+  </div>
+
+  <!-- LEISTUNGEN ZEILEN -->
+  <div style="border-top:1px solid #e0dfd8">
+    <div style="padding:0 6%">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 0 18px;border-bottom:1px solid #e0dfd8">
+        <div class="stag" style="margin:0">Was wir tun</div>
+        <a href="leistungen.html" style="font-size:.67rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#aaa;transition:color .2s" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#aaa'">Alle Leistungen &rarr;</a>
+      </div>
+    </div>
+    <a href="leistungen.html#strassenbau" class="lrow">
+      <span class="lrow-num">01</span>
+      <span class="lrow-title">Straßenbau</span>
+      <span class="lrow-desc">Entwurfs- und Ausführungsplanung, Ausschreibung, Bauleitung nach HOAI</span>
+      <span class="lrow-arrow">&rarr;</span>
+    </a>
+    <a href="leistungen.html#kanal" class="lrow">
+      <span class="lrow-num">02</span>
+      <span class="lrow-title">Kanal &amp; Entwässerung</span>
+      <span class="lrow-desc">Kanalnetze, Rückhaltebecken, hydraulische Nachweise nach DWA</span>
+      <span class="lrow-arrow">&rarr;</span>
+    </a>
+    <a href="leistungen.html#wasser" class="lrow">
+      <span class="lrow-num">03</span>
+      <span class="lrow-title">Wasserversorgung</span>
+      <span class="lrow-desc">DVGW-konforme Planung, Netzberechnung, Sanierung und Abnahme</span>
+      <span class="lrow-arrow">&rarr;</span>
+    </a>
+    <a href="leistungen.html#ausschreibung" class="lrow">
+      <span class="lrow-num">04</span>
+      <span class="lrow-title">Ausschreibung &amp; Bauleitung</span>
+      <span class="lrow-desc">Leistungsverzeichnis, VOB-Vergabe, Bauüberwachung und Abrechnung</span>
+      <span class="lrow-arrow">&rarr;</span>
+    </a>
+  </div>
+
+  <!-- REFERENZEN EDITORIAL -->
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px">
+      <div>
+        <div class="stag">Referenzen</div>
+        <div class="stitle">Ausgewählte Projekte</div>
+        <div class="sdiv"></div>
+      </div>
+      <a href="projekte.html" style="font-size:.67rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#aaa;transition:color .2s;white-space:nowrap;padding-bottom:4px" onmouseover="this.style.color='#1a1a1a'" onmouseout="this.style.color='#aaa'">Alle Projekte &rarr;</a>
+    </div>
+    <div class="ref-grid">
+      <div class="ref-main">
+        <a href="projekte.html" class="ref-img" style="display:block;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80')">
+          <div class="ref-overlay"></div>
+          <div class="ref-info">
+            <div class="ref-cat">Straßenbau · 2023</div>
+            <div class="ref-name">Ortsdurchfahrt Musterstadt B3</div>
+            <div class="ref-detail">Vollausbau inkl. Gehwegen, Beleuchtung und Entwässerung</div>
+          </div>
+        </a>
+      </div>
+      <div class="ref-side">
+        <a href="projekte.html" class="ref-img" style="display:block;background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80')">
+          <div class="ref-overlay"></div>
+          <div class="ref-info">
+            <div class="ref-cat">Kanalbau · 2023</div>
+            <div class="ref-name">Kanalneubau Gewerbegebiet Nord</div>
+            <div class="ref-detail">Planung DN 300–800, RRB nach DWA-A 117</div>
+          </div>
+        </a>
+        <a href="projekte.html" class="ref-img" style="display:block;background-image:url('https://images.unsplash.com/photo-1581093458791-9d42f5e3a469?w=600&q=80')">
+          <div class="ref-overlay"></div>
+          <div class="ref-info">
+            <div class="ref-cat">Wasserversorgung · 2022</div>
+            <div class="ref-name">Trinkwassernetz Beispieldorf</div>
+            <div class="ref-detail">Erneuerung DN 150, DVGW-Zertifizierung</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div class="ctatxt">
+      <p>Haben Sie ein Projekt?</p>
+      <h2>Sprechen Sie uns an –<br>wir beraten Sie gerne.</h2>
+    </div>
+    <div class="ctaact">
+      <a href="kontakt.html" class="btn bl">Kontakt aufnehmen</a>
+      <a href="ansprechpartner.html" class="btn bg2">Ansprechpartner</a>
+    </div>
+  </div>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script>
+var cur=0,sls=document.querySelectorAll('.sl'),dts=document.querySelectorAll('.dot'),ctr=document.getElementById('sctr');
+function gS(n){
+  sls[cur].classList.remove('active');dts[cur].classList.remove('active');
+  cur=n;sls[cur].classList.add('active');dts[cur].classList.add('active');
+  if(ctr)ctr.textContent=String(cur+1).padStart(2,'0')+' / 0'+sls.length;
+}
+setInterval(function(){gS((cur+1)%sls.length)},5500);
+</script>
+<script src="nav.js"></script>
+</body>
+</html>
